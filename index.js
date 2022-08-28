@@ -12,5 +12,22 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
-}
+  //return tutorials.mao((tutorial)) => 
+
+	//uppercase first letter of each word in each tutorial
+	return tutorials.map((tutorial) => {
+		return tutorial
+			.split(" ")
+			.map((word) => {
+				return word[0].toUpperCase() + word.slice(1);
+			})
+			.join(" ");
+	});
+
+};
+
+
+
+  
+
+
